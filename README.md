@@ -18,3 +18,5 @@ which is perfect for students who are not even serious about their
 courses to give it a try. With students who lack motivation, giving 
 this app one try and seeing the benefits of it can lighten the 
 workload itself, and produce better grades.
+
+Watch the CheckyDemo.mp4 for a demo of the app!
