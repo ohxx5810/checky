@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="10">
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:textSize="16dp"
+        android:text="@string/marks_list_label"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        style="?android:listSeparatorTextViewStyle">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colour_label"
+            android:layout_weight="0.71"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.60"
+            android:text="@string/work_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_label"
+            android:layout_weight="0.46"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_label"
+            android:layout_weight="0.73"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_date_label"
+            android:layout_weight="0.55"/>
+        <!--
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/list_item_mark_add_button"
+            android:layout_width="29dp"
+            android:layout_height="24dp"
+            android:textSize="12sp"
+            android:text="@string/add_new_mark"
+            android:layout_marginRight="2dp"
+            />
+            -->
+
+
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mark_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/list_item_mark_add_button"
+            android:text="@string/add_new_mark"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/done_adding"
+            android:text="@string/done_adding_marks"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

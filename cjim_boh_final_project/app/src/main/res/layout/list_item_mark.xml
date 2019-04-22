@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        >
+
+        <CheckBox
+            android:id="@+id/list_item_mark_status"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            />
+<!--
+Written By - Christopher Jim
+######################################################################################################
+    IF THE CHECKBOX IS FOR THE COLOR INDICATOR FOR MARK TEXTVIEW IS EASIER TO USE
+    CheckBox is color is not editable through java only through xml, therefore you cannot change the
+    color once it is set for a checkbox, if the checkbox is for something else I left it there for now
+
+    BELOW, is the same set up but for a TextView which is editable throught java, and is probably our best bet for
+    showing a color indicated mark status...
+
+      <TextView
+            android:id="@+id/list_item_mark_status"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            />
+######################################################################################################
+-->
+        <EditText
+            android:id="@+id/list_item_work_title"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="@string/work_hint"
+            android:maxLength="14"
+            android:paddingRight="12dp"
+            android:layout_weight="3.81"/>
+
+        <EditText
+            android:id="@+id/list_item_mark_text_view"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="@string/new_mark_hint"
+            android:maxLength="3"
+            android:paddingRight="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="0.14"/>
+
+       <EditText
+           android:id="@+id/list_item_mark_weight_text_view"
+           android:maxLines="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingRight="12dp"
+           android:layout_marginRight="10dp"
+           android:textSize="12sp"
+           android:maxLength="3"
+           android:hint="@string/weight_hint"
+           android:layout_weight="0.82"/>
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/list_item_mark_due_date_button"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:text="@string/due_date_label"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

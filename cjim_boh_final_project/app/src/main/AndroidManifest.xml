@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ca.wlu.cjim.cjim_boh_final_project" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name="ca.wlu.cjim.cjim_boh_final_project.CourseListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="ca.wlu.cjim.cjim_boh_final_project.AddCourseActivity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"
+            android:label="@string/add_new_course_title">
+            <!--
+            ABOVE android:theme line of code sets AddCourseActivity as a popup
+
+            android:parentActivityName="ca.wlu.cjim.cjim_a5.CourseListActivity>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ca.wlu.cjim.cjim_a5.CourseListActivity></meta-data>
+            -->
+        </activity>
+
+        <activity
+            android:name="ca.wlu.cjim.cjim_boh_final_project.CourseActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="ca.wlu.cjim.cjim_boh_final_project.CourseListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ca.wlu.cjim.cjim_boh_final_project.CourseListActivity"></meta-data>
+
+        </activity>
+    </application>
+
+</manifest>

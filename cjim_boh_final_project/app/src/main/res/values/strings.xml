@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">cjim_boh_final_project</string>
+    <string name="add_new_course_title">Add a new Course</string>
+    <string name="course_list_frag_title">Courses</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="course_title_hint_phone">Enter Phone Number...</string>
+    <string name="course_title_hint_photo">Default Photo...</string>
+    <string name="course_title_label">Title</string>
+    <string name="course_phone_label">Phone Number: </string>
+    <string name="course_photo_label">Photo: </string>
+
+    <string name="course_title_hint_code">Enter Course Code...</string>
+    <string name="course_title_hint_name">Enter Course Name...</string>
+    <string name="course_code">Course Code: </string>
+    <string name="course_name">Course Name: </string>
+    <string name="new_course">New Course</string>
+    <string name="no_more_courses">Done Adding Courses</string>
+    <string name="new_semester">New Semester</string>
+    <string name="back_button">Back Button</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d courses</string>
+    <string name="add_button_title">Add Course</string>
+    <string name="cancel_button_title">Cancel</string>
+    <string name="due_date_hint">No due dates yet.</string>
+
+    <string name="add_new_mark">Add New Mark</string>
+    <string name="done_adding_marks">Done</string>
+    <string name="new_mark_hint">100</string>
+    <string name="colour_label">Status</string>
+    <string name="mark_label">Mark (%)</string>
+    <string name="marks_list_label">Marks -</string>
+    <string name="work_hint">ie: Test1...</string>
+    <string name="weight_label">Weight (%)</string>
+    <string name="due_date_label">Due Date</string>
+    <string name="work_title">Title</string>
+    <string name="weight_hint">20</string>
+    <string name="photo_name">ic_launcher</string>
+    <string name="courses_label">Courses - </string>
+
+    <string name="date_picker_title">Due date:</string>
+</resources>

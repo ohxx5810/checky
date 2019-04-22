@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:listSeparatorTextViewStyle">
+
+    <TextView
+        android:id="@+id/list_item_course_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="4dp"
+        tools:text="Contact Title"
+        />
+    <TextView
+        android:id="@+id/list_item_course_due_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_course_title_text_view"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/due_date_hint"
+        tools:text="Next Due Date"/>
+<!--##################################################TO DO- Chris
+   COLOR INDICATOR MADE BELOW: can set the color with the color.xml file on java side
+    use textView.setBackground(getResources()getColor(R.color.colorname));
+#######################################################-->
+    <TextView
+        android:layout_width="7dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:paddingRight="20dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/list_item_grade_average_color_indicator"/>
+</RelativeLayout>
+
+
